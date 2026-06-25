@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Banho e tosa</title>
+</head>
+<body>
+
+  <a href="index.html">Home</a>
+
+  <h1>Agendamento para banho e tosa</h1>
+  <p>Faça o seu agendamento com pelo menos 48 horas de antecedência</p>
+
+  <form>
+
+    <h2>Identificação do dono do animal</h2>
+
+    <p>
+      <label for="nome-dono">Nome:</label><br>
+      <input type="text" id="nome-dono" name="nome-dono" placeholder="Digite o nome completo do dono do animal">
+    </p>
+    <p>
+      <label for="endereco">Endereço:</label><br>
+      <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço">
+    </p>
+    <p>
+      <label for="cep">CEP:</label><br>
+      <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX">
+    </p>
+    <p>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Digite o endereço de email">
+    </p>
+    <p>
+      <label for="tel">Tel/Cel:</label><br>
+      <input type="tel" id="tel" name="tel" placeholder="99 99999-9999">
+    </p>
+
+    <h2>Animal</h2>
+
+    <p>
+      <label for="nome-animal">Nome:</label><br>
+      <input type="text" id="nome-animal" name="nome-animal" placeholder="Digite o nome do animal">
+    </p>
+    <p>
+      Porte do cão:
+      <label><input type="radio" name="porte" value="pequeno"> Pequeno</label>
+      <label><input type="radio" name="porte" value="medio"> Médio</label>
+      <label><input type="radio" name="porte" value="grande"> Grande</label>
+    </p>
+    <p>
+      <label for="tosa">Tipo de tosa:</label><br>
+      <select id="tosa" name="tosa">
+        <option value="nenhuma">Nenhuma</option>
+        <option value="higienica">Higiênica</option>
+        <option value="completa">Completa</option>
+      </select>
+    </p>
+    <p>
+      <label for="obs">Observações:</label><br>
+      <textarea id="obs" name="obs" placeholder="Digite alguma informação do animal se necessário"></textarea>
+    </p>
+
+    <h2>Horário</h2>
+    <p>Obs: Não atendemos aos domingos e às segundas-feiras</p>
+
+    <p>
+      Indique os dias da semana de sua preferência:<br>
+      <label><input type="checkbox" name="dias" value="terca"> Terça-Feira</label>
+      <label><input type="checkbox" name="dias" value="quarta"> Quarta-Feira</label>
+      <label><input type="checkbox" name="dias" value="quinta"> Quinta-Feira</label>
+      <label><input type="checkbox" name="dias" value="sexta"> Sexta-Feira</label>
+      <label><input type="checkbox" name="dias" value="sabado"> Sábado</label>
+    </p>
+    <p>
+      <label for="opcao1">Primeira opção de horário:</label><br>
+      <input type="date" id="opcao1" name="opcao1">
+    </p>
+    <p>
+      <label for="opcao2">Segunda opção de horário:</label><br>
+      <input type="date" id="opcao2" name="opcao2">
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+    </p>
+
+  </form>
+
+</body>
+</html>
